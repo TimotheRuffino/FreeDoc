@@ -4,9 +4,10 @@
 
 * Projet Freedoc !
 
-* En cas de problème pour exécuter la console : 
-
-- ** spring stop ** dans le terminal
-- ** bundle install **
-- ** rails c **
+En cas de problème pour allumer la console : 
+```
+spring stop
+bundle install
+rails c
+```
 
