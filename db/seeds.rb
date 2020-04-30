@@ -15,7 +15,7 @@ City.destroy_all
 Specialty.destroy_all
 JoinTableDoctorSpecialty.destroy_all
 
-20.times do
+40.times do
   city = City.create!(
     name: Faker::Address.city
   )
@@ -37,7 +37,7 @@ JoinTableDoctorSpecialty.destroy_all
     date: Faker::Time.between_dates(from: Date.today - 365, to: Date.today + 90, period: :day)
   )
   specialty = Specialty.create!(
-    specialty: ["Dentiste", "Généraliste", "Dermatologue", "Gynécologue", "Ophtalmologue"].sample
+    specialty: ["Marabout", "Généraliste", "ORL", "Gynécologue", "Ophtalmologue"].sample
   )
   joint_table_doctor_specialty = JoinTableDoctorSpecialty.create!(
     doctor: Doctor.all.sample,
